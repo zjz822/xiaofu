@@ -1,14 +1,16 @@
 package com.xiaofu.fu.pojo;
 
-import io.jsonwebtoken.Jwts;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.SecretKeySpec;
 import java.util.Date;
 import java.util.Map;
 
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+
+import io.jsonwebtoken.Jwts;
+
 public class jwts {
 
-    // HS256 要求密钥 ≥ 256 位 = 32 字节
+    // HS256 要求密钥 ≥ 256 位 = 32 字节11111111111111111111111111111111111111111111111111111111111111111111111111111
     private static final byte[] SECRET_BYTES =
             "xiaofu-2026-secret-key-must-32bytes!".getBytes();  // 正好 32 字节
 
